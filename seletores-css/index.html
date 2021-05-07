@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>SELETORES</h1>
+
+    <div id="div1">
+        <article id="article1">
+            <p id="p1">Aula 1: Encontrando um elemento que está dentro de outros (css: #div1 #article1 #p1)</p>
+        </article>
+    </div> 
+
+    <div id="div2">
+        <ul id="ul2">
+            <li id="li2">Aula 2: Seleciona o elemento que é filho direto do pai, uso de ">" entre os elementos (css: #div2 > #ul2 > #li2)</li>
+            <ul id="ul2">
+                <li id="li2">Aula 2: Esse elemento não é filho direto, então não entra na seleção</li>
+            </ul>
+        </ul>
+    </div>
+    
+    <div id="div3">
+        <p>Aula 3: Seleciona o elemento irmão direto, uso de "+" entre os elementos (css: #btn1 + button)</p>
+        <button id="btn1">Aula 3</button>
+        <button>Aula 3</button>
+
+        <br><br>
+
+        <p>Aula 3 pt2: Seleciona todos os elementos irmãos correspondentes a tag, uso de "~" entre os elementos (css: #h1-3 ~ p)</p>
+        <h1 id="h1-3">Aula 3: h1</h1>
+        <p>Aula 3: p</p>
+        <p>Aula 3: p</p>
+        <p>Aula 3: p</p>
+    </div>
+
+    <div id="div4">
+        <p>Aula 4: Seleciona um elemento com base em um atributo digitado entre "[]" (css: p[id="p4"])</p>
+
+        <p id="p4">Pagrágrafo selecionado</p>
+        <p>Parágrafo não selecionado</p>
+    </div>
+
+    <h2>PSEUDO CLASSES</h2>
+    
+    <div id="div5">
+        <p>Aula 5: Seleciona o primeiro elemento filho existente (css: ul li:first-child)</p>
+        <ul>
+            <li>li selecionada</li>
+            <li>li não selecionada</li>
+            <li>li não selecionada</li>
+            <li>li não selecionada</li>
+        </ul>
+    </div>
+    
+    <div id="div6">
+        <p>Aula 6: Seleciona elementos com base em sua sequência entre seus irmãos (css: #div6 article p:nth-of-type(1))</p>
+        <article>
+            <h3>Title</h3>
+            <p>Aula 6</p>
+            <p>Aula 6️</p>
+            <p>Aula 6</p>
+        </article>
+    </div>
+
+    <div id="div7">
+        <p>Aula 7: Seleciona elementos com base em sua sequência, mas leva em consideração os filhos do elemento pai (css: #div7 article p:nth-child(2))</p>
+        <article>
+            <h3>Title</h3>
+            <p>Aula 7</p>
+            <p>Aula 7️</p>
+            <p>Aula 7</p>
+        </article>
+    </div>
+
+    <div id="div8">
+        <p>Aula 8: Seleciona uma sequência de elementos pares (even) ou impares (odd) (css: #div8 ul li:nth-child(odd) ou #div8 ul li:nth-child(even))</p>
+        <ul>
+            <li>Aula 8</li>
+            <li>Aula 8</li>
+            <li>Aula 8</li>
+            <li>Aula 8</li>
+        </ul>
+
+        <ul>
+            <li>Aula 8</li>
+            <li>Aula 8</li>
+            <li>Aula 8</li>
+            <li>Aula 8</li>
+        </ul>
+    </div>
+
+    <h2>PSEUDO ELEMENTS</h2>
+
+    <div id="div9">
+        <p>Aula 9: Estiliza uma parte específica de um elemento (css: p::before), (css: p::after) ou (css: p::first-line)</p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  
+        </p>
+    </div>
+    
+</body>
+</html>

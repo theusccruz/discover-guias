@@ -1,0 +1,97 @@
+* {
+    font-family: sans-serif;
+}
+
+div {
+    border: black solid 1px; 
+    margin: 5px;
+    padding: 10px;    
+}
+
+div p:first-child {
+    font-size: 25px;
+}
+
+div p:first-child:hover {
+    font-size: 26px;
+    transition: 0.5s;
+}
+
+/* Aula 1 */
+#div1 #article1 #p1 {
+    color: rebeccapurple;
+    font-size: 25px;
+}
+/* Aula 1 */
+
+/* Aula 2 */
+#div2 > #ul2 > #li2 {
+    color: red;
+    font-size: 25px;
+}
+/* Aula 2 */
+
+/* Aula 3 */
+#div3 h1 {
+    font-size: 18px;
+}
+#btn1 + button {
+    margin-left: 60px;
+}
+
+#h1 ~ p {
+    color: chocolate;
+}
+/* Aula 3 */
+
+/* Aula 4 */
+p[id="p4"] {
+    color: red;
+}
+/* Aula 4 */
+
+/* Aula 5  */
+#div5 ul li:first-child {
+    color: darkslateblue;
+}
+/* Aula 5  */
+
+/* Aula6 */
+#div6 article p:nth-of-type(1) {
+    color: deeppink;
+}
+/* Aula6 */
+
+/* Aula7 */
+#div7 article p:nth-child(2) {
+    color: seagreen;
+}
+/* Aula7 */
+
+/* Aula8 */
+#div8 ul:nth-child(2) li:nth-child(odd) {
+    background-color: slategray;
+} 
+
+#div8 ul:nth-child(3) li:nth-child(even) {
+    background-color: slategray;
+} 
+/* Aula8 */
+
+/* Aula9 */
+#div9 p:nth-child(2) {
+    color: rgb(4, 9, 82);
+}
+
+#div9 p:nth-child(2)::before {
+    content: "> ";
+}
+
+#div9 p:nth-child(2)::after {
+    content: " <";
+}
+
+#div9 p:nth-child(2)::first-line {
+    font-weight: bold;
+}
+/* Aula9 */

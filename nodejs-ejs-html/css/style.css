@@ -1,0 +1,8 @@
+body {
+    padding-top: 50px;
+}
+
+main > div {
+    background-color: rgb(202, 199, 196);
+    padding: 20px;
+}
